@@ -1,4 +1,4 @@
-package co.com.bancolombia.usecase.person;
+package co.com.bancolombia.usecase;
 
 import lombok.RequiredArgsConstructor;
 

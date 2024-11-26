@@ -1,7 +1,7 @@
 package co.com.bancolombia.mongo.helper;
 
-import co.com.bancolombia.mongo.MongoDBRepository;
-import co.com.bancolombia.mongo.MongoRepositoryAdapter;
+import co.com.bancolombia.mongo.PersonDBRepository;
+import co.com.bancolombia.mongo.PersonRepositoryAdapter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -18,12 +18,12 @@ import static org.mockito.Mockito.when;
 class AdapterOperationsTest {
 
     @Mock
-    private MongoDBRepository repository;
+    private PersonDBRepository repository;
 
     @Mock
     private ObjectMapper objectMapper;
 
-    private MongoRepositoryAdapter adapter;
+    private PersonRepositoryAdapter adapter;
 
     private Object entity;
     private Flux<Object> entities;
@@ -34,7 +34,7 @@ class AdapterOperationsTest {
 
         when(objectMapper.map("value", Object.class)).thenReturn("value");
 
-        adapter = new MongoRepositoryAdapter(repository, objectMapper);
+        adapter = new PersonRepositoryAdapter(repository, objectMapper);
 
         entity = "value";
         entities = Flux.just(entity);
