@@ -2,6 +2,8 @@ package co.com.bancolombia.mongo;
 
 import co.com.bancolombia.gateway.PersonRepository;
 import co.com.bancolombia.model.Person;
+import co.com.bancolombia.mongo.entity.PersonEntity;
+import co.com.bancolombia.mongo.gateway.PersonDBRepository;
 import co.com.bancolombia.mongo.helper.AdapterOperations;
 import org.reactivecommons.utils.ObjectMapper;
 import org.springframework.stereotype.Repository;

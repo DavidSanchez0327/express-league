@@ -1,8 +1,8 @@
 package co.com.bancolombia.mongo.helper;
 /*
 import co.com.bancolombia.model.Person;
-import co.com.bancolombia.mongo.PersonDBRepository;
-import co.com.bancolombia.mongo.PersonEntity;
+import co.com.bancolombia.mongo.gateway.PersonDBRepository;
+import co.com.bancolombia.mongo.entity.PersonEntity;
 import co.com.bancolombia.mongo.PersonRepositoryAdapter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
